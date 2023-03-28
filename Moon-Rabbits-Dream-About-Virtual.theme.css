@@ -15,14 +15,14 @@
 ---------------------------------------------------------------*/
 @import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/tsukino-mito-base.css');
 
-/*---------------------------------------------------------------
+---------------------------------------------------------------
                Make it look Like Another Window
----------------------------------------------------------------*/
+---------------------------------------------------------------
 @import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/window-mode.css');
 
-/*---------------------------------------------------------------
+---------------------------------------------------------------
                         Custom Settings
----------------------------------------------------------------*/
+---------------------------------------------------------------
 
 /* Animate the background */
 @import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/background-animation.css');
@@ -36,9 +36,9 @@
 /* Reverse the position of Server list and members */
 @import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/reverse.css');
 
-/*------------------------------------------------------
+------------------------------------------------------
                 all the customization
-------------------------------------------------------*/
+------------------------------------------------------
 :root {
     /* The text that appear in top, leave it blank ("") if you dont want any */
     --custom-text: "TSUKINO MITO";
