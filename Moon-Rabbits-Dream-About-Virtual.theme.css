@@ -1,42 +1,115 @@
-## Moon Rabbits Dream About Virtual
+/**
+ * @name Moon Rabbits Dream About Virtual
+ * @description Based in Tsukino Mito Album Presentation
+ * @author zuzumi#5335
+ * @authorId 437579806616322049
+ * @invite PsNtzGeHuW
+ * @donate https://www.paypal.me/hurtyoutube
+ * @website https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual
+ * @source https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/blob/main/release/tsukino-mito.base.css
+ * @version 3
+*/
 
-### [Version 3!!!](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/releases)
+/*---------------------------------------------------------------
+   Theme Import you can't disable this is the full theme dummy
+---------------------------------------------------------------*/
+@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/tsukino-mito-base.css');
 
-A theme based on the art cover from Tsukino Mito Album Moon Rabbits Dream About Virtual!
+/*---------------------------------------------------------------
+               Make it look Like Another Window
+---------------------------------------------------------------*/
+@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/window-mode.css');
 
-Theme by [zuzumi](https://github.com/zuzumi-f)
+/*---------------------------------------------------------------
+                        Custom Settings
+---------------------------------------------------------------*/
 
-* [Preview](#preview)
-* [Original Cover Art](#original-cover-art)
-* [Customization](#customization)
-* [Addons](#addons)
+/* Animate the background */
+@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/background-animation.css');
 
-## Preview
+/* Add transparency for background images */
+/* @import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/background-image.css'); */
 
-### Dark Mode
-![image](https://user-images.githubusercontent.com/79029257/192064735-ba03305c-dd27-461a-9c5d-b23e035f1eb1.png)
-![image](https://user-images.githubusercontent.com/79029257/192064751-1da11ae5-6141-47d7-b04d-f54b374cf261.png)
-## New Bg Image
-![image](https://user-images.githubusercontent.com/79029257/224162016-7d1bf1b8-3a2b-407f-b725-168d1572ed00.png)
+/* Pop Effect */
+@import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");
 
-### Light Mode
-![image](https://user-images.githubusercontent.com/79029257/192064806-4b6f9f29-470f-46ca-b90f-69dc68b5b641.png)
-![image](https://user-images.githubusercontent.com/79029257/192064830-07c989c1-58bf-4fd3-9731-1d7277bfe36a.png)
-## New Bg Image
-![image](https://user-images.githubusercontent.com/79029257/224162143-64b25a1b-a8d9-4f86-9fc1-882cda375987.png)
+/* Reverse the position of Server list and members */
+@import url('https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/reverse.css');
 
-## Original Art Cover
-[![moonrabbitsdreamaboutvirtual2-art-scale-2_00x-gigapixel](https://user-images.githubusercontent.com/79029257/132885766-58a204cf-4941-4143-a3d2-7d9eec948c2c.png)](https://youtu.be/5rvzyCed6Bo)
+/*------------------------------------------------------
+                all the customization
+------------------------------------------------------*/
+:root {
+    /* The text that appear in top, leave it blank ("") if you dont want any */
+    --custom-text: "TSUKINO MITO";
 
-## Customization
+    /* General Colors */
+    --border-color: #da4a60;
+    --drag-gradient1: #e8c4d3;
+    --drag-gradient2: #e39ba7;
+    --name-bg: #d95b72;
 
-For customization follow the next steps
+    /* Background Colors & BG Image */
+    --bg-gradient1: #e297b2;
+    --bg-gradient2: #c0b4d5;
+    --bg-gradient3: #54b5de;
+    --bg-image: none; /* Write the image url, example url("your url") [none is default]*/
+    --opacity: 0; /* Value in numbers from 0 to 1, but there is a limit */
+    --bg-blur: 6px; /* Value in px */
 
-![image](https://user-images.githubusercontent.com/79029257/196774076-bc73438a-05da-457f-8f2f-f1dad1016fe8.png)
+    /* HSL(Hue, Saturation, Lightness). This values will change the accent color (That blue color in most buttons) */
+    --H: 339; /* Value in numbers [339 is default] */
+    --S: 97%; /* Value in % [97% is default] */
+    --L: 71%; /* Value in % [71% is default] */
 
-![image](https://user-images.githubusercontent.com/79029257/196775040-98577fdc-e985-4217-bc98-6909823f2fa9.png)
+    /* HSL DarkTheme */
+    --darkH: 0;     /* Value in numbers [0 is default] */
+    --darkS: 0%;    /* Value in % [0% is default] */
+    --darkL: 16%;   /* Value in % [16% is default] */
 
-## Addons
-* Settings Modal by **[DevilBro](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal/)**
+    /* Windows Buttons Colors */
+    --close-color: #da5169;
+    --max-color: #ffdf5b;
+    --min-color: #00a0cb;
 
-* Pop! by **[devinkid1](https://github.com/devinkid1/Pop)**
+    /* Status Colors */
+    --online-color: #60e046;
+    --idle-color: #ffca3a;
+    --dnd-color: #f73c3c;
+    --offline-color: #707070;
+    --streaming-color: #f066f0;
+
+    /* Chatbar Colors */
+    --channeltextarea-background: #F0F2F2;
+    --text-color: #313D40;
+    --icon-color: var(--text-color);
+    --selected-text-bg: var(--text-color);
+    --selected-text-color: var(--channeltextarea-background);
+    --mentioned-color: 200, 100%, 60%; /* HSL Values Only */
+
+    /* Other options */
+    --border-width: 3px;
+    --round-corners: 16px;
+}
+
+/* Selection text color */
+::selection {
+    background-color: var(--selected-text-bg); /* text selection*/
+    color: var(--selected-text-color); /* text color */
+}
+
+/*------------------------------------------------------
+                anything else down here
+------------------------------------------------------*/
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+T
